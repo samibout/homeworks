@@ -8,7 +8,9 @@ namespace exercise_14
     {
       Console.WriteLine("Give me the truth!");
       // Write your code here:
+      bool truth = Convert.ToBoolean(Console.ReadLine());
 
+      Console.WriteLine(truth);
     }
   }
 }
