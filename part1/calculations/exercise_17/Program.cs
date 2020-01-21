@@ -8,10 +8,9 @@ namespace exercise_17
     {
 
       // Write your code here:
-      
       Console.WriteLine("Give the first number");
-      int first = System.Convert.ToInt32(Console.ReadLine());
-
+      int first = int.Parse(Console.ReadLine());
+      
       Console.WriteLine("Give the second number");
       int second = System.Convert.ToInt32(Console.ReadLine());
 
