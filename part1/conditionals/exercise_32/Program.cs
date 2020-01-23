@@ -7,7 +7,7 @@ namespace exercise_32
     public static void Main(string[] args)
     {
       // Write your code here:
-
+      Console.WriteLine("Speak, friend, and enter!");
     }
   }
 }
