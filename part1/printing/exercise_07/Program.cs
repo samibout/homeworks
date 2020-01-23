@@ -8,7 +8,15 @@ namespace exercise_07
         {
             Console.WriteLine("Give input!");
             // Write your code here:
-            
+            string message = Console.ReadLine();
+
+            int number =0;
+
+            while(number<3)
+            {
+                Console.WriteLine(message);
+                number++;
+            }
         }
     }
 }

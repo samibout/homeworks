@@ -8,7 +8,12 @@ namespace exercise_16
     {
 
       // Write your code here:
+      Console.Write("How many days? ");
 
+      int days = Convert.ToInt32(Console.ReadLine());
+      int seconds = days * 24 * 60 * 60;
+
+      Console.WriteLine(seconds);
     }
   }
 }
