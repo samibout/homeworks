@@ -8,12 +8,10 @@ namespace exercise_41
     {
 
       // Write your code here:
-      Console.WriteLine("Give a number:");
 
       int number = Convert.ToInt32(Console.ReadLine());
 
-
-      Console.WriteLine("The second power is " + number * number);
+      Console.WriteLine(number * number);
       
     }
   }
