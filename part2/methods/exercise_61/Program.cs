@@ -6,8 +6,63 @@ namespace exercise_61
   {
     public static void Main(String[] args)
     {
-
+      //PrintRightTriangle(7);
+      ChristmasTree(9);
     }
+    public static void ChristmasTree(int height)
+    {
+      int c = height;
+      height = height*2;
+      for(int a=1;a<height+1;a=a+2)
+        
+      {
+        //c++;
+        //for(int i=1;i<c;i++)
+        //{
+          PrintSpaces(c-a);
+          PrintStars(a);
+        //}
+        c++;
+      Console.WriteLine();
+      }
+      int bases = (Convert.ToInt32(height/2)-2);
 
+      for(int i=0;i<2;i++)
+      {
+        for(int a=0;a<bases;a++)
+
+        {
+          Console.Write(" ");
+        }
+        Console.WriteLine("***");
+      }
+      Console.WriteLine(bases);
+    }
+    public static void PrintRightTriangle(int size)
+    {
+      int c = 1;
+      for(int a=1;a<size+1;a=a+2)
+        
+      {
+        c++;
+        //for(int i=1;i<c;i++)
+        //{
+          PrintSpaces(size-a);
+          PrintStars(a);
+        //}
+        
+      Console.WriteLine();
+      } 
+    }
+    public static void PrintSpaces(int number)
+    {
+        for(int i=number;i>0;i--){
+            Console.Write(" ");}
+    }
+    public static void PrintStars(int number)
+    {
+        for(int i=0;i<number;i++){
+            Console.Write("*");}
+    }
   }
 }
