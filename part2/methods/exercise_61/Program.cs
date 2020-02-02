@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 
 namespace exercise_61
@@ -61,3 +62,37 @@ namespace exercise_61
     }
   }
 }
+=======
+﻿using System;
+
+namespace exercise_61
+{
+  class Program
+  {
+    public static void Main(String[] args)
+    {
+
+    }
+
+    public static void PrintStars(int number)
+    {
+
+    }
+
+    public static void PrintSpaces(int number)
+    {
+
+    }
+
+    public static void PrintRightTriangle(int size)
+    {
+
+    }
+
+    public static void ChristmasTree(int height)
+    {
+
+    }
+  }
+}
+>>>>>>> ee90be72f496cf75bcd6f4184d18fa91124b54a7
