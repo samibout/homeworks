@@ -11,17 +11,14 @@ namespace exercise_61
     }
     public static void ChristmasTree(int height)
     {
+      //Maybe I lost my way somewhere, but got to the goal
       int c = height;
       height = height*2;
       for(int a=1;a<height+1;a=a+2)
         
       {
-        //c++;
-        //for(int i=1;i<c;i++)
-        //{
           PrintSpaces(c-a);
           PrintStars(a);
-        //}
         c++;
       Console.WriteLine();
       }
@@ -45,11 +42,9 @@ namespace exercise_61
         
       {
         c++;
-        //for(int i=1;i<c;i++)
-        //{
+
           PrintSpaces(size-a);
           PrintStars(a);
-        //}
         
       Console.WriteLine();
       } 
