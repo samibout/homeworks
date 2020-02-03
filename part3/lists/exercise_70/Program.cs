@@ -17,7 +17,7 @@ namespace exercise_70
         }
         list.Add(input);
       }
-      int big=0;
+      int big=list[0];
       foreach(int i in list)
       {
         if(i>big)
