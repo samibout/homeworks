@@ -17,6 +17,15 @@ namespace exercise_70
         }
         list.Add(input);
       }
+      int big=0;
+      foreach(int i in list)
+      {
+        if(i>big)
+        {
+          big=i;
+        }
+      }
+      Console.WriteLine("The greatest number: " + big);
     }
   }
 }
