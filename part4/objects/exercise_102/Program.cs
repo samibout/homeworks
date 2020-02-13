@@ -7,7 +7,6 @@ namespace exercise_102
     public static void Main(string[] args)
     {
       Gauge g = new Gauge();
-
       while (!g.Full())
       {
         Console.WriteLine("Not full! Value: " + g.value);
