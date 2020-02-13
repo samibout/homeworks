@@ -15,9 +15,9 @@ namespace exercise_107
             return "The card has a balance of " + this.balance + " euros";
         }
         public void EatLunch()
-            {
-                this.balance = this.balance - 10.60;
-            }
+        {
+            this.balance = this.balance - 10.60;
+        }
         public void DrinkCoffee()
         {
             this.balance = this.balance - 2.00;
