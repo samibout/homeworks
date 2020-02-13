@@ -13,7 +13,7 @@ namespace exercise_110
       
       while(true)
       {
-        
+        Console.Write("Name: ");
         string person = Console.ReadLine();
         if(person=="")
         {
@@ -22,6 +22,7 @@ namespace exercise_110
         names.Add(new Item(person));
         
       }
+      Console.WriteLine();
       foreach(Item i in names)
       {
         Console.WriteLine(i); 
