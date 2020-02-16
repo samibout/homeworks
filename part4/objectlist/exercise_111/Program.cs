@@ -23,14 +23,12 @@ namespace exercise_111
         Console.WriteLine("Identification number:");
         string id = Console.ReadLine();
         list.Add(new PersonalInformation(fName, lName, id));
-        string fullName = fName + " " + lName;
-        aList.Add(fullName);
         
       }
         Console.WriteLine();
-        foreach(string lame in aList)
+        foreach(PersonalInformation lame in list)
         {
-          Console.WriteLine(lame);
+          Console.WriteLine(lame.firstName + " " + lame.lastName);
         }
       
     }
