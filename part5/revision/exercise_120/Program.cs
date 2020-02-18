@@ -7,6 +7,11 @@ namespace exercise_120
     public static void Main(string[] args)
     {
       // You can test your cube here.
+      Cube length = new Cube(40);
+      
+      length.Volume();
+
+      Console.WriteLine(length);
       
     }
   }
