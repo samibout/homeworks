@@ -9,7 +9,7 @@ namespace exercise_120
     public Cube(int length)
     {
       this.length = length;
-      
+      this.volume = 0;
         
     }
     public int Volume()
