@@ -7,8 +7,10 @@ namespace exercise_124
     public static void Main(string[] args)
     {
       // Implement your program here!
-
-      
+      string blaah = null;
+      blaah.ToLower();  
     }
-  }
+  
+  
+  }    
 }
