@@ -28,8 +28,19 @@ namespace exercise_130
         // "The book is already on the list. Let's not add the same book again."
         // If the list Contains the book
 
-
-
+        bool same = false;
+        foreach(Book b in books)
+        {
+          if(b.Equals(book))
+          {
+            Console.WriteLine("The book is already on the list. Let's not add the same book again.");
+            same = true;
+          }
+        }
+        if(same == false)
+        {
+          books.Add(book);
+        }
 
         // END SOLUTION
       }
