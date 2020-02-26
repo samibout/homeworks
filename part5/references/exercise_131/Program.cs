@@ -11,14 +11,45 @@ namespace exercise_131
 
       // Ask for input as shown in the exercise.
 
+      while (true)
+      {
+        Console.WriteLine("Identifier? (empty will stop):");
+        string id= Console.ReadLine();
+        if (id == "")
+        {
+          break;
+        }
+
+        Console.WriteLine("Name? (empty will stop):");
+        string name = Console.ReadLine();
+        if (name == "")
+        {
+          break;
+        }
+        Item itemes = new Item(id, name);
+
+        bool same = false;
+        foreach(Item b in items)
+        {
+          if(b.Equals(itemes))
+          {
+            same = true;
+          }
+        }
+        if(same == false)
+        {
+          items.Add(itemes);
+        }
+      }
       // The end printing is ready, don't touch this
       Console.WriteLine("==Items==");
       foreach (Item item in items)
       {
         Console.WriteLine(item);
       }
+      }
 
-    }
+    
 
   }
 }
