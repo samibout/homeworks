@@ -1,3 +1,4 @@
+using System;
 namespace exercise_132
 {
   public class SimpleDate
@@ -16,18 +17,45 @@ namespace exercise_132
     public void Advance()
     {
       // Do something here
+      
+      if(day < 30)
+      {
+        day++;
+      }
+      else
+      {
+        day = 1;
+        if(month < 12)
+        {
+          month++;
+        }
+        else
+        {
+          month = 1;
+          year++;
+        }
+      }
 
     }
 
     public void Advance(int howManyDays)
     {
       // Do something here
+  
+      for(int i = 0;i<howManyDays;i++)
+      {
+        Advance();
+      }
+      
     }
 
     public SimpleDate AfterNumberOfDays(int days)
     {
-      SimpleDate newDate = new SimpleDate(/* Do something here?*/);
+      
+      SimpleDate newDate = new SimpleDate(day, month, year);
       // Do something here
+    
+      newDate.Advance(days);
 
       return newDate;
     }
