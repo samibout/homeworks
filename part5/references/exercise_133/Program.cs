@@ -7,7 +7,7 @@ namespace exercise_133
   {
     public static void Main(string[] args)
     {
-      Money money = new Money(100, 00);
+      Money money = new Money(100, 70);
       Money moreMoney = new Money(500, 50);
 
       Money combined = money.Plus(moreMoney);
