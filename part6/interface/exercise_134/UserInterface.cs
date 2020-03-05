@@ -59,6 +59,7 @@ namespace exercise_134
         stars--;
       }
     }
+    
   }
 }
 

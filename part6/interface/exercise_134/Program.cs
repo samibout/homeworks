@@ -11,6 +11,8 @@ namespace exercise_134
 
       UserInterface ui = new UserInterface(register);
       ui.Start();
+      Console.WriteLine("The average of grades: " + register.AverageOfGrades());
+      Console.WriteLine("The average of points: " + register.AverageOfPoints());
     }
   }
 }
