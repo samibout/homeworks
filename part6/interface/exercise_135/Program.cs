@@ -7,7 +7,10 @@ namespace exercise_135
   {
     public static void Main(string[] args)
     {
-      List<string> jokes = new List<string>();
+      JokeManager jokes = new JokeManager();
+      UserInterface ui = new UserInterface(jokes);
+      ui.Start();
+     /* //List<string> jokes = new List<string>();
       Console.WriteLine("What a joke!");
 
       while (true)
@@ -29,13 +32,15 @@ namespace exercise_135
         {
           Console.WriteLine("Write the joke to be added:");
           string joke = Console.ReadLine();
-          jokes.Add(joke);
+          //jokes.Add(joke);
+          jokes.AddJoke(joke);
+        
         }
         else if (command == "2")
         {
           Console.WriteLine("Drawing a joke.");
 
-          if (jokes.Count == 0)
+          /*if (jokes.Count == 0)
           {
             Console.WriteLine("Jokes are in short supply.");
           }
@@ -45,17 +50,20 @@ namespace exercise_135
             int index = draw.Next(0, jokes.Count);
             Console.WriteLine(jokes[index]);
           }
+          Console.WriteLine(jokes.DrawJoke());
 
         }
         else if (command == "3")
         {
           Console.WriteLine("Printing the jokes.");
-          foreach (string joke in jokes)
+          /*foreach (string joke in jokes)
           {
             Console.WriteLine(joke);
           }
+        
+          jokes.PrintJokes();
         }
-      }
+      }*/
     }
   }
 }
