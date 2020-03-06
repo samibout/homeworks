@@ -15,6 +15,7 @@ namespace exercise_134
       ReadPoints();
       Console.WriteLine("");
       PrintGradeDistribution();
+      PrintAverages();
     }
 
     public void ReadPoints()
