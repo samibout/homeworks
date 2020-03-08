@@ -17,5 +17,19 @@ namespace exercise_136
     }
 
     // Do something here
+
+    public static void HowManyNames(Person person)
+    {
+      string persString = person.ToString();
+      int count = 0;
+      for (int i=0;i < persString.Length; i++)
+      {
+        if(char.IsUpper(persString[i]))
+        {
+          count++;
+        }
+      }
+      Console.WriteLine(person.ToString() + " has " + count + " names.");
+    }
   }
 }
