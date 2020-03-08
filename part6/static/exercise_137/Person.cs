@@ -19,6 +19,12 @@ namespace exercise_136
     public int HowManyNames()
     {
       // Do something here
+      if(name.Length > 0)
+      {
+        string[] pieces = System.Text.RegularExpressions.Regex.Split(name.ToString(), @"\s+");
+        
+        return pieces.Length;
+      }
       return 0;
     }
 
