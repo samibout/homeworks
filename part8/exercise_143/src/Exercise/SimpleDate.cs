@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace Exercise
 {
   public class SimpleDate
@@ -39,13 +41,26 @@ namespace Exercise
     public override bool Equals(object compared)
     {
       // DO SOMETHING HERE
+      if((compared==null) || !this.GetType().Equals(compared.GetType()))
+      {
+        return false;
+      }
+
+      SimpleDate daa = (SimpleDate)compared;
+      //if(this.day == daa.day && this.month == daa.month && this.year == daa.year)
+      
+      if(day.Equals(daa.day) && month.Equals(daa.month) && year.Equals(daa.year))
+      {
+        return true;
+      }
       return false;
     }
 
     public override int GetHashCode()
     {
       // DO SOMETHING HERE
-      return -1;
+      int hashsh = (this.day-this.month+this.year)*this.day*this.month*this.year;
+      return hashsh;
     }
   }
 }
