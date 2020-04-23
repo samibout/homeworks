@@ -7,7 +7,7 @@ CrEate the following three classes:
 * Class A. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void A()**, which prints a string "A".
 * Class B. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void B()**, which prints a string "B".
 * Class C. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void C()**, which prints a string "C".
-* After you have crEated the classes, **modify them** so that class B inherits class A, and class C inherits class B. In other words, class A will be a base class for class B, and class B will be a base class for class C.
+* After you have created the classes, **modify them** so that class B inherits class A, and class C inherits class B. In other words, class A will be a base class for class B, and class B will be a base class for class C.
 
 ```cs
 A a = new A();
@@ -93,7 +93,7 @@ The exercise template contains a class **Warehouse**, which has the following pr
 
 * **public int balance** - balance of the warehouse, i.e. the capacity which is taken up by the items in the warehouse.
 * **public int capacity** - the total capacity of the warehouse (i.e. the one that was provided in the constructor).
-* constructor **public Warehouse(int capacity)** - CrEates an empty warehouse, which has the capacity provided as a parameter; an invalid capacity (<=0) crEates a useless warehouse, with the the capacity 0.
+* constructor **public Warehouse(int capacity)** - CrEates an empty warehouse, which has the capacity provided as a parameter; an invalid capacity (<=0) creates a useless warehouse, with the the capacity 0.
 
 * **public int HowMuchSpaceLeft()** - Returns a value telling how much space is left in the warehouse.
 * **public void AddToWarehouse(int amount)** - Adds the desired amount to the warehouse; if the amount is negative, nothing changes, and if everything doesn't fit, then the warehouse is filled up and the rest is "thrown away" / "overflows".
@@ -107,7 +107,7 @@ balance: 64, space left 16
 
 In this exercise we build variations of a warehouse based on the Warehouse class.
 
-The class **Warehouse** handles the functions related to the amount of a product. Now we want product name for the product and a way to handle the name. Let's write **ProductWarehouse** as a *derived class of Warehouse!* First, we'll just crEate a private object variable for the product name, and a constructor:
+The class **Warehouse** handles the functions related to the amount of a product. Now we want product name for the product and a way to handle the name. Let's write **ProductWarehouse** as a *derived class of Warehouse!* First, we'll just create a private object variable for the product name, and a constructor:
 
 * **public string productName**
 * **public ProductWarehouse(string productName, int capacity)** - CrEates an empty product warehouse. The name of the product and the capacity of the warehouse are provided as parameters.
@@ -130,7 +130,7 @@ Juice
 Juice: balance: 989, space left 11
 ```
 
-Let's crEate a more informative warehouse. We want to know, if and how the balance of a product has changed. Let's first crEate a special tool for the change history, and crEate a class **ChangeHistory**:
+Let's create a more informative warehouse. We want to know, if and how the balance of a product has changed. Let's first create a special tool for the change history, and create a class **ChangeHistory**:
 
 * **private List<int> history**
 * constructor **public ChangeHistory()** 
@@ -152,7 +152,7 @@ Implement **ProductWarehouseWithHistory** as a derived class of **ProductWarehou
 
 Public constructors and methods:
 
-* **public ProductWarehouseWithHistory(string productName, int capacity, int initialBalance)** crEates a product warehouse. The product name, capacity, and initial balance are provided as parameters. Set the initial balance as the initial balance of the warehouse, as well as the first value of the change history.
+* **public ProductWarehouseWithHistory(string productName, int capacity, int initialBalance)** creates a product warehouse. The product name, capacity, and initial balance are provided as parameters. Set the initial balance as the initial balance of the warehouse, as well as the first value of the change history.
 * **public string History()** returns the product history like this:
 
 ```console
@@ -237,7 +237,7 @@ Milk: balance: 190, space left 810
 
 #### Exercise_151
 
-In the exercise template you'll find the classes **Item** and **Box**. Box is an abstract class, where adding multiple items is implemented by repEatedly calling the **Add-method**. The Add-method, meant for adding a single item, is abstract, so every class that inherits it, must implement it. Your assignment is to edit the Box-class and to implement different kinds of boxes based on the Box class.
+In the exercise template you'll find the classes **Item** and **Box**. Box is an abstract class, where adding multiple items is implemented by repeatedly calling the **Add-method**. The Add-method, meant for adding a single item, is abstract, so every class that inherits it, must implement it. Your assignment is to edit the Box-class and to implement different kinds of boxes based on the Box class.
 
 * Implement the **Equals** and **GetHashCode** methods for the Item-class. They are needed, so that you can use the contains-methods of different lists and collections. *Implement the methods in such a way that value of the weight instance variable of the Item-class isn't considered.*
 
@@ -269,6 +269,16 @@ Console.WriteLine(box.IsInBox(new Item("Pirkka")));
 MisplacingBox mbox = new MisplacingBox();
 Console.WriteLine(mbox.IsInBox(new Item("Saludo")));
 Console.WriteLine(mbox.IsInBox(new Item("Pirkka")));
+```
+
+```console
+True
+True
+False
+True
+False
+False
+False
 ```
 
 #### Exercise_152
@@ -366,7 +376,7 @@ Oak Dining room table - weight 30 kg
 
 Notice that the weight for books is not printed.
 
-* CrEate a class called **Box**.  Items implementing the **IPackable** interface can be packed into a box. The Box constructor takes the maximum capacity of the box in kilograms as a parameter. The combined weight of all items in a box cannot be more than the maximum capacity of the box. **Box should also implement IPackable**, so you could have boxes inside boxes!
+* Create a class called **Box**.  Items implementing the **IPackable** interface can be packed into a box. The Box constructor takes the maximum capacity of the box in kilograms as a parameter. The combined weight of all items in a box cannot be more than the maximum capacity of the box. **Box should also implement IPackable**, so you could have boxes inside boxes!
 
 Below is an example of using a box:
 
