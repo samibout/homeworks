@@ -8,23 +8,22 @@ namespace part1
   {
     public int Calculate(string a, string b)
     {
-
+      //first done it by myself
       int match = 0;
       int st = a.Length;
       int sub = b.Length;
 
       for(int i =0;i<st-(sub-1);i++)
       {
-          Console.WriteLine(a.Substring(i, sub));
         if(a.Substring(i, sub) == b)
         {
             match++;
             
         }
       }
-      Console.WriteLine(match);
-      Console.WriteLine(Regex.Matches(a, b).Count);
+      //then found a line from internet
+      match = Regex.Matches(a, b).Count;
       return match;
     }
   }
-}
+} 
